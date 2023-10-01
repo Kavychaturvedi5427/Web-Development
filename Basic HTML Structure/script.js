@@ -1,0 +1,1 @@
+alert("This webpage is about what is the Basic Structure of HTML webpage is.");
