@@ -1,0 +1,1 @@
+alert("This webpage is about Heading Paragraph and Links tag.");
