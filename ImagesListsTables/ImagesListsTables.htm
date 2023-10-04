@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images Lists and Tables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1> How to insert Images in html webpage</h1>
+    <p>In order to insert Images in html webpage we use "img" tag with "src" attribute.</p>
+    <img src="train.png" alt="Train Image">
+    <!--whenever the image url we have given will not work then in place of that image the text given in alt attribute will be displayed-->
+
+    <h1> How we can make table in html webpage</h1>
+    <p>In order to declare a table we need to use table tag. After that we have to use tr tag to give the row of the
+        table and then we give th tag tag to give the headings of
+        the tables , and td tag to give the data under the heading.</p>
+
+    <table>
+        <!-- we can also give caption of the table -->
+        <caption>Employee Details.</caption>
+
+        <!-- we can also header, body , and footer tag to separate data using in groups -->
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Phone number</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>Kavya</td>
+                <td>18</td>
+                <td>7325213531</td>
+                <td>B-141 Mayur Vihar Agra</td>
+            </tr>
+
+            <tr>
+                <!-- now if we want Naman to take space of two columns then we use colspan attribute. -->
+                <td colspan="2">Namam</td> <!--Now Naman have taken the space of age column.-->
+                <td>17</td>
+                <td>7125213531</td>
+                <td>B-142 Mayur Vihar Agra</td>
+            </tr>
+
+            <tr>
+                <!-- now as we have used rowspan=2 on 1st row then that particular row will take space of rows -->
+                <td rowspan="2">Rahul</td>
+                <td>20</td>
+                <td>9919340124</td>
+                <td>M-131 Vijay Nagar </td>
+
+            </tr>
+        </tbody>
+
+        <tfoot>
+
+            <tr>
+                <td>Raman</td>
+                <td>20</td>
+                <td>9919340124</td>
+                <td>M-131 Vijay Nagar </td>
+
+            </tr>
+        </tfoot>
+
+    </table>
+
+<hr> <!-- This tag will draw an horizontal line-->
+
+    <h2>HTML Lists</h2>
+    <p>There are three types of lists in HTML</p>
+    1-- unordered lists
+    2-- ordered lists
+    3-- defination lists
+<br><br> <!-- this will break the line ad shift the content to the next line-->
+    <span> unordered lists (ul tag is used) creates list in an unordered manner with bullets on the list items </span>
+
+    <ul type="square">
+        <!-- we can also change the type of bullets we want usinf type attribute. -->
+        <li>number one</li>
+        <li>number two</li>
+        <li>number three</li>
+        <li>number four</li>
+    </ul>
+
+<br><br>
+    <span>ordered lists (ol tag is used) creates list in an ordered manner with numbers/ roman number at the beginning of the list items</span>
+
+    <ol type="I">
+        <!-- we can also the change the type of bullets using type attribute. -->
+        <li>number one </li>
+        <li>number two</li>
+        <li>number three</li>
+        <li>number four</li>
+    </ol>
+
+    <br><br>
+    <span>A Definition List in HTML is used to represent a list of terms along with their corresponding descriptions or definitions. The Definition List is created using the "dl" (Definition List) element, which wraps around one or more pairs of "dt" (Definition Term) and "dd" (Definition Description) elements.</span>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>HTML stnad for hypertext markup language and is used to create structure of the webpage.</dd>
+    </dl>
+
+</body>
+
+</html>
