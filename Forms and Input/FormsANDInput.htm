@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms And Input</title>
+</head>
+
+<body>
+    <h2> How can we create forms in html webpage </h2>
+    <span> In order to create form in html we use form tag </span>
+    <span>The HTML | action Attribute is used to specify where the form data is to be sent to the server after the
+        submission of the form. It can be used in the form element. There are two types of form action value :-
+        <dl>
+            <dt>1-- Get Value </dt>
+            <dd> used to request data from a specified resource.</dd>
+            <dt>2-- Post Value</dt>
+            <dd> used to send data to a server to update a resource.</dd>
+        </dl>
+    </span>
+    <form action="post">
+
+        <!-- div tag is used to create a section  -->
+        <div>
+            <label for="firstName">Username :--</label>
+            <input type="text" name="MyName" id="firstName" placeholder="Enter your First Name">
+        </div>
+
+        <div>
+            <input type="radio" name="Gender" id="Gender" value="Male">
+            <label for="Gender"> Male</label>
+            <input type="radio" name="Gender" id="Female" value="Female">    
+            <label for="Female">Female</label> <!-- due to label tag when we click on female option the box will automatically be checked-->
+
+            <!-- as we have give same value of name for both the label tag then only one option will be selected at a time -->
+        </div>
+
+        <div>
+            <input type="checkbox" name="check " id="check" value="yes">
+            <label for="check">This is checkbox</label> 
+        </div>
+
+        <div>
+            <br>
+            <label for="text">Write your comment here</label>
+            <br>
+            <textarea name="text" id="text" cols="50" rows="20" placeholder="Enter your text here...."></textarea>
+        </div>
+        <div>
+            <select name="fruits" id="fruits">
+                <option value="apple">Apple</option>
+                <option value="Banana">Banana</option>
+                <option value="Mango" selected>Mango</option> <!-- Now the mango option is selected by default-->
+                <option value="Kiwi">Kiwi</option>
+                <!-- if we want certain option to be selected then we have to use selected Attribute in that option -->
+            </select>
+        </div>
+
+    </form>
+
+
+
+</body>
+
+</html>
