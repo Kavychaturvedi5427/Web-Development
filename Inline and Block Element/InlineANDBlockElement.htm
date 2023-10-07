@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and Block Element - HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <dl>
+        <dt>Inline Element</dt>
+        <dd>Inline Element are those Element which take only required amount of space (width).</dd>
+        <img src="inline.png" alt="inline Element">
+
+        <dt>Block Element</dt>
+        <dd>Block Element are those Element which take the whole space(width) whether it is need or not.</dd>
+        <img src="Block.png" alt="block Element">
+    </dl>
+
+    <p>Hey there I am a paragraph. This p tag is a block Element</p>
+    <!-- The paragraph tag is a block Element. -->
+    <a href="https://google.com">Open google.</a>
+    <!-- anchor tag is an Inline Element. -->
+
+    <div>
+        Hello I am a block Element.
+    </div>
+
+    <span>I am span and I am an inline Element.</span>
+    <a href="#">I am an Inline Element.</a>
+    <span>As both span and anchor tags are inline Element then they both will take required amount of space and didn't
+        push the next content on to the other line.</span>
+    <!-- we can also make Block Element -- Inline and Inline Element -- Block by changing their display property -->
+    <br><br>
+
+    <!-- Quick Quiz -->
+    <!-- Without using br tag make a vertically aligned form asking a man about his name, city and pincode -->
+
+    <form>
+        <div>
+            <input type="text" name="Username" id="Username" placeholder="Enter your Username">
+        </div>
+        
+        <div>
+            <input type="text" name="city" id="city" placeholder="Enter Your city">
+        </div>
+
+        <div>
+            <input type="number" name="pincode" id="pincode" placeholder="Enter pincode">
+        </div>
+    </form>
+</body>
+
+</html>
