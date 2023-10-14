@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Internal External CSS - HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #bg-yellow{
+            background-color:yellow ;
+            color: red;
+        }
+        .bg-blue{
+            background-color: lightblue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>How we can apply CSS in HTML webpage?</h1>
+    <p>There are three ways to apply CSS in HTML webpage :-</p>
+    <ol>
+        <li>Inline CSS</li>
+        <li>Internal CSS</li>
+        <li>External CSS</li>
+    </ol>
+    <h2 style="background-color: beige; color: lightblue;">How to apply inline CSS?</h2>
+    <p style="background-color: blanchedalmond; color: blue;">In order to apply Inline css you need to use style
+        attribute under the tag where you want to apply CSS.</p>
+
+    <h2 class="bg-blue color-white">How to apply Internal CSS?</h2>
+    <p id="bg-yellow"> In order to apply internal CSS you need to use style tag under head tag and target using id/classes/tags.</p>
+
+    <h2 id="bg-brown">How to apply External CSS?</h2>
+    <p class="bg-pink color-lightblue">In order to apply External CSS you need to create a css file and have to link it with the html file using Link:css attribute under head tag.</p>
+</body>
+
+</html>
