@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors - HTML</title>
+    <style>
+        /* This is Element Selector */
+        div {
+            background-color: pink;
+        }
+
+        /* This is class selector */
+        .red {
+            background-color: red;
+        }
+
+        /* This is ID selector */
+        #greenPara {
+            background-color: green;
+        }
+
+        /* Child selector */
+        /* This is only applicable if there is a paragraph tag directly inside the div. */
+        div>p {
+            background-color: thistle;
+        }
+
+        /* Descendent Selector */
+        /* If paragraph is not directly under the div but we want to change its property then we use descendent selector  */
+        div p {
+            /* This property will be applied to all the paragraphs under the div no matter whether they are directly under div or not. */
+            color: white;
+        }
+
+        /* Universal Selector */
+        /* if we want to apply certain property to all the element then with the help of Universal Selector we can do so.*/
+        * {
+            background-color: aliceblue;
+            color: brown;
+        }
+
+        /* pseudo selector */
+        a:visited {
+            color: thistle;
+        }
+
+        a:link {
+            color: coral;
+        }
+
+        a:active{
+            /* now if we click on the link then it's background color will have aqua color. */
+            background-color: aqua;
+        }
+
+        a:hover{
+            /* now if hover(place our cursor on the link) then it's background-color will become  of rgb(68,65,65) color and the text color will become white
+            */
+            color: white;
+            background-color: rgb(68, 65, 65);
+        }
+
+        p:first-child{
+            /*This means apply these properties to those paragraph which are the direct child (first child) of their parent tag.*/
+            color:gold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <p> I am first</p>
+        <p> I am second</p>
+    </main>
+    <div>
+        I am a div.
+        <p>I am a paragraph inside this div.</p>
+    </div>
+    <div class="red">
+        I am another div.
+    </div>
+    <p id="greenPara">
+        I am a paragraph.
+    </p>
+    <a href="https://www.google.com">Visit google</a>
+    <!-- If we want our link to get yellow in color after visiting the site then in such case we use pseudo selectors-->
+    <a href="https://www.facebook.com">Visit facebook</a>
+    <!-- now if we want our link all of our links to get coral color then we use a:link pseudo selector. -->
+
+    <a href="https://www.instagram.com">Visit instagram.</a>
+</body>
+
+</html>
