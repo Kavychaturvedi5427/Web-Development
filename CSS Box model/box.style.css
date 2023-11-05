@@ -1,0 +1,40 @@
+* {
+    /* This is CSS reset */
+    margin: 0;
+    padding: 0;
+
+}
+
+box-model {
+    height: 200px;
+    width: 300px;
+}
+
+.box {
+    background-color: thistle;
+}
+
+.box1 {
+    color: aliceblue;
+    padding: 10px;
+    /* Now it give 10px padding to all the sides of box 1 */
+    margin: 25px;
+    /* Now it give 5px margin to all the sides of box 1 */
+    border: 5.5px solid grey;
+
+    /* if we don't use box-sizing: border-box then on height 200px it will add padding border width and it's height will increase from 200px to 220 or 230px  */
+    /* but if we use box-sizing:border-box then the height which we have given will include all other lengths like padding border width etc and the actual length will remain 200px this will not include margin as margin is applied outside*/
+    height: 200px;
+    box-sizing: border-box;
+}
+
+
+.box2 {
+    color: yellow;
+    border: 5.5px solid black;
+    margin:25px;
+    height: 200px;
+    /* as we have given the margin 25px to both the boxes 1 and 2 then the margin between box 1 and box 2 should be 50px as 25px from the bottom of the box 1 and 25px from above of box 2 but this will not happen this concept is called margin collapse */
+
+    /* concept of margin collapse state that if different margins are applied to two different boxes and are overlapping to each other the maximum of both will be applied between the boxes in this case both boxes have 25px margin applied to all the sides and are overlapping then only 25px will be applied instead of 50px and if one of them is 35px and  other one is 25px then 35px margin will be applied.. */
+}
