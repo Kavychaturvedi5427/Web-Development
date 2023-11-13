@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+p {
+    font-family: 'Agbalumo';
+    /*These are called call by fonts */
+    /* system will try to apply the first font i.e franklin gothic medium and if that font is not available then it will try to apply the next font i.e arial narrow */
+
+    /* this attribute use to change the style on the font */
+    /* font-weight: 100; */
+    /*used to make the text bold*/
+    font-size: 15px;
+    /* to change the size of the font */
+    line-height: 1.4;
+    /* line height is the distance between two consecutive lines */
+    /* text-indent: 40px; */
+    /* this property will add indent to the 1st line  */
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    /* these two font families are imported from google font service and is brought here by import tag placed at the top the css file */
+    letter-spacing: 20px;
+    /* this will increase the spacing between the letters */
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style: wavy;
+
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: capitalize;
+    /* as in h2 the word text has first letter small and if we want to make it in capital then we use text-tranform: capitalize; property similarly there are values like lowercase to make the complete word small and uppercase make the complete word in Capital letter. */
+
+    text-decoration: underline;
+    /* This will put underline under the text  */
+    text-decoration-color: purple;
+    /* this property will apply the desired color to the decoration which we have applied  */
+    text-decoration-style: wavy;
+    /* with this property we can specify how we want to decorate our text; */
+
+}
+
+.para {
+    border: 5px solid thistle;
+    width: 145px;
+    overflow: hidden;
+    /* through this property we can decide what we want if our text is being overflown from the box */
+    text-overflow: ellipsis;
+    /* word-break: break-all; this will break all the words*/
+}
+
+.colors {
+    color: thistle;
+
+}
+
+.name {
+    color: mediumaquamarine;
+}
+
+.hex {
+    /* in this we give color using hex color codes */
+    color: #F47E17;
+    /*This type of color format is known as hex color code format*/
+}
+
+.rgb {
+    /* In this method we red green and blue color and from the combination of these three the color in the particular manner the desired color is formed.*/
+    color: rgb(162, 103, 204);
+    /* This method of giving color to the text is known as rgb color format. */
+    /* there is one other way i.e rgba() where a is alpha which controls the opacity of the color and it's value lies between 0 and 1.*/
+    color: rgba(162, 103, 204, 0.500);
+}
+
+.HSL{
+    color: hsl(281, 49%, 58%);
+}
