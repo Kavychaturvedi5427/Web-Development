@@ -1,0 +1,32 @@
+/* CSS Reset */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.box {
+    border: 2px solid orange;
+    display: inline-block;
+    padding: 30px;
+    margin: 20px;
+    /* now this margin and padding will not applied from the top in case of inline element if we want to apply margin and padding from the top also then we have to change the display property from inline to inline-block.*/
+}
+
+span {
+
+    display: inline-block;
+    border: 2px solid maroon ;
+    padding: 30px;
+    margin: 30px 0px;
+}
+
+.box1{
+    /* display: none; */
+    /* if we use display as none then it will remove the content as well as the space occupied by that element; */
+    visibility: hidden;
+    /* but as we have used visibility: hidden then it will hide the content not delete it and the space occupied by that element will be there; */
+}
