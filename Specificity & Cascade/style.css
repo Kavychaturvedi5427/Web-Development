@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+/* The specifity of element selector is 1  */
+h1 {
+    color: skyblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+/* The specifity of the class selector is 10 */
+.cyellow{
+    color: yellow;
+}
+
+.cred{
+    color: red;
+}
+
+.cpurple{
+    color: purple !important;
+    /* The following property is applied on the 1st paragraph but in that we have used two other type of class selector and inline selector also so according to the specifity the inline styling should be applied but here in the class .cpurple we have used !important then this CSS of .cpurple class will be applied.. */
+}
+/* if the specifity of two selector is same then the one which is coming at the last will be given preference.. */

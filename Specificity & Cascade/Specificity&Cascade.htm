@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity & Cascade - HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Specificity and Cascading in HTML & CSS :-</h1>
+    <p style="color: skyblue;" class="cyellow cred cpurple"> Let's consider that we have an element in HTML and we have styled it in two
+        different manner and we have applied two different properties in it so which one will be applied to the element.
+        For example :- If one is saying to make background color red and the other one is saying to make the background
+        color yellow so which one will be applied. So this will be decided by Specificity in CSS.</p>
+    <p>since all the three classes i.e .cyellow , .cred , .cpurple all are given to the same paragraph but the last css
+        class .cpurple having color : puprle value is applied</p>
+    <p>Here in this case .cyellow, .cpurple , .cred all are of same class so in such cases where the same type of
+        selector is there then here the rule of position and order is applied , means whichever selector or property is
+        at the last then that one is applied. But if the selectors are of different types then in such case we use the
+        concept of Specificity.Like if we use element selector and class selector then in this case concept of
+        Specificity is used.</p>
+    <span>Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector</span>
+    <p>If we are using inline styling and an external styling then in that case inline styling will be given preference
+        and the external styling will be neglected.</p>
+
+    <!--  Always try to use least specific selector so that it can be over written later by most specific selector -->
+    <!-- The third way to decide is ORIGIN means browsers also apply some of the css from their own side which later on is over written by our css. -->
+
+    <!-- Then after that there is !important if we have used !important is any type of the selector then no matter what their specifity is the following property will be applied.  -->
+    <h1>Specificity Calculation</h1>
+    <p>To calculate specificity, assign a value to each part of the selector:
+    <ul>
+
+        <li>
+            Universal Selector: 0
+        </li>
+        <li>
+            Element selectors and pseudo-elements: 1
+        </li>
+        <li>
+            Class selectors, attribute selectors, and pseudo-classes: 10
+        </li>
+        <li>
+            ID selectors: 100
+        </li>
+        <li>
+            Inline styles: 1000
+        </li>
+        Then, add up the values of all the parts in the selector.
+    </ul>
+
+</body>
+
+</html>
