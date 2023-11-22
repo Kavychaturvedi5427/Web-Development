@@ -1,0 +1,16 @@
+.box{
+    border: 2px solid red;
+    border-radius: 30px;
+    width: 20vw;
+    height: 20vh;
+    margin: auto;
+    padding: 25px 25px;
+    text-align: center;
+    /* background-color: thistle; */
+    /* color: white; */
+    box-shadow: inset 10px 8px  10px thistle;
+}
+
+.text{
+    text-shadow: 3px 6px 3px #c2dce4;
+}
