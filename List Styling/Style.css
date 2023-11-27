@@ -1,0 +1,8 @@
+nav ul li{
+    /* list-style: devanagari; */
+    /* with this property we can change or remive the marker of the list item */
+    background-color: thistle;
+    list-style-position: inside;
+    border: 2px solid maroon;
+    list-style-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fcss-plus.com%2F2011%2F12%2Fcontrol-your-list-items%2F&psig=AOvVaw3_Anz05aYX74LxWhpgeivj&ust=1701107845196000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCLiOudie4oIDFQAAAAAdAAAAABAE");
+}
