@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property in HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+
+    <div class="info">
+        <p>By default the position of boxes is static --&gt; with this position applied we can't apply left right top
+            bottom and z-index properties.</p> <br>
+        <p>By choosing the position as relative --&gt; we can shift the box from top bottom left right reltive to it's
+            original position , now as box 2 is overlapping box 1 and if we want our box1 to overlap box2 then we use
+            z-index Property.</p> <br>
+        <p>By choosing position as absolute for box1--&gt; div box 1 which is under div.parent with position absolute
+            and top 0px will check it's parent element i.e div.parent is positioned element or not (means it have
+            position other than static or not) if not then it will move to body which is the parent for div.parent to
+            check whether it's positioned or not , if not then it will move to html tag which is the parent for body and
+            if not then HTML is not a child element of any one then it will adjust relative to HTML element. "so the
+            position:absolute; will be applied relative to nearest positioned element." . But if the parent element i.e
+            div.parent is positioned then the box 1 will be positioned relative to div.parent. If transform , filter or
+            perspective properties are used then they can also make an element appear positioned.</p> <br>
+        <p> By choosing position as fixed --&gt; if we set the position of the element as fixed and set top bottom left
+            right values then it will get fixed at that place it will not move anywhere even if we scroll the page. Just
+            like the bottom ad's in the websites.</p> <br>
+        <p>By choosing the position as sticky --&gt; the box whose position is sticky will get stick to that position
+            when we scroll the page. Useful for creating "Navbars"</p>
+
+    </div>
+</body>
+
+</html>

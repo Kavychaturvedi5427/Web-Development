@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parent{
+    margin: 13px;
+    padding: 15px;
+    border: 3px solid thistle;
+    border-radius: 20px;
+    /* position: absolute; */
+}
+
+.box {
+    margin: 20px;
+    padding: 40px;
+    height: 25vh;
+    width: 80vw;
+    border: 2px solid purple;
+    border-radius: 25px;
+}
+
+.box1 {
+    background-color: aqua;
+    /*position:  relative;
+    z-index: 4; This will not work until the position of the box 1 is static to make this work we need to change it's property to any other position property .*/
+    /* position:  absolute;
+    top:0px;
+    left: 30px; */
+    position: sticky;
+    top: 0;
+    height: 30vh;
+    width: 81vw;
+    
+
+}
+
+.box2 {
+    background-color: antiquewhite;
+    /*
+    position: absolute;
+    top: -132px;  /*With this values of top the box2 will overlap with box1
+    left: 40px;   With this values of left the box2 will shift by 40px from left */
+}
+
+.box3 {
+    background-color: azure;
+    /* position:  fixed;
+    bottom: 0px;
+    right: 0px; */
+}
+
+.box4 {
+    background-color: purple;
+}
