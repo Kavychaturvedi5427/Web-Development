@@ -1,0 +1,8 @@
+.box{
+    width: 30vw;
+    height: 30vh;
+    border: 3px solid sandybrown;
+    overflow: scroll;
+    /* With this we can see the scroll bar even if there is overflow of the content or not.  */
+    /* if we set the overflow property as auto then it will show the scroll bar if the content is being overflown and if not then it will not show the scroll bar.; */
+}
