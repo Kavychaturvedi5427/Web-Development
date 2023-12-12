@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* In CSS we declare variable using root and these variables are global variables and can be used any where and multiple number of times.*/
+    --color: rgb(219, 155, 219);
+    --seccolor: rgb(17, 163, 221);
+}
+
+.nav {
+    background-color: var(--color);
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 35px;
+    margin: auto;
+}
+
+ul li:first-child {
+    --color: rgb(226, 102, 64);         /* --color is a variable which is declared globally but we have overwritten it here so now here it become local variable the --color variable along with color code rgb(226,102,64) is only applicable here if we use --color variable under different class then the one which is declared globally will be used.*/
+    background-color: var(--color , skyblue);     /*background-color: var(--color , skyblue) if there is no varaible named color then it will apply the color which we have given along with it.*/
+}
+
+.container {
+    background-color: var(--seccolor);
+}
