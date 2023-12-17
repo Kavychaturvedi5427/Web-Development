@@ -1,0 +1,23 @@
+.cards {
+    border: 3px solid black;
+    display: flow-root;
+}
+
+.card {
+
+    border: 2px solid palevioletred;
+}
+
+img {
+    float: left;
+    /* Now by editing float:left; this will shift the imae to left and will allow the paragraph and other card to come on right to it. */
+    /* If the image is overflowing from the container after applying the float property then it will overflow in order to not to make the image overflow we can use display:flow-root; property on the parent element */
+    height: 25vh;
+    width: 25vw;
+}
+
+.card:nth-child(3){
+    background-color: aqua;
+    /* clear: right;    This will remove the element which is floating on it's right so if the element is on the left side of the div then it will not remove the element as we have cleared right  */
+    clear: both;
+}
