@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS selectors</title>
+    <style>
+        .boxes:first-child {
+            /*This means if boxes is the first child of it's parent then apply these properties.*/
+            background-color: aliceblue;
+        }
+
+        .box:first-child {
+            /* This means apply these properties to only those box which is the first child of it's parent.*/
+            background-color: plum;
+            color: white;
+        }
+/* 
+        .box::first-line {
+            This means apply these properties to the first line of the box
+            color: blue;
+        } */
+
+        .boxes *{
+            color: rgb(118, 228, 15);
+            border: 2px solid springgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">Hey I am box 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nostrum
+            molestiae numquam consequatur beatae sequi at? Excepturi nam rerum quas fuga nulla illo iusto veniam
+            suscipit ullam, cumque necessitatibus laboriosam?
+        </div>
+        <div class="box">Hey I am box 2</div>
+        <div class="box">Hey I am box 3</div>
+    </div>
+</body>
+
+</html>

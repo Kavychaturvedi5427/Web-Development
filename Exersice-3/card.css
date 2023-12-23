@@ -24,11 +24,13 @@ body {
     position: absolute;
     top: 6.56px;
     left: 6.567px;
+    /* padding: 1px; */
     height: 30vh;
     width: 24vw;
     /* margin: auto; */
     border: 2px solid grey;
     border-radius: 30px;
+    cursor: pointer
 }
 
 .Btn1 {
@@ -41,6 +43,8 @@ body {
     border-radius: 23px;
     width: 75px;
     color: #726f6f;
+    cursor: pointer;
+
 }
 
 .Btn1:hover {
@@ -91,6 +95,7 @@ body {
     border-radius: 25px;
     font-weight: bold;
     width: 110px;
+    cursor: pointer
 }
 
 .readmore:hover {
