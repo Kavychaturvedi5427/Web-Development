@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox In HTML</title>
+    <link rel="stylesheet" href="flexbox.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+
+            <div class="item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </main>
+
+    <div class="content">
+        <p>All these boxes are lying in downward direction in the container. Back in the days it is very difficult to
+            align these items in one row but now we can allign them with the help of flexbox.</p>
+        <p> Using display as flex will make the boxes to allign themseleves in left to right order. In order to make
+            them allign in horizontally-center (depending on the main axis) we have to use justify-content="center"
+            property. </p>
+        <p> Now in order to allign the items in center direction along the main axis we will use allign-items:"center"
+            property.</p>
+        <p>There are multiple values of allign-items and justify-content property by which we can control the horizontal
+            and vertical allignment of the content.</p>
+        <p>If we use flex then by default it will position items in left to right order but if we want to position items
+            in top to bottom or bottom to top order then we will use flex-direction property.
+            If we want to arrange item in top to bottom order then we will use <b> flex-direction:"column"; </b> and if
+            we want to allign then items in bottom to top order then we will use <b> flex-direction:"column-reverse";
+            </b> property.
+        </p>
+        <p>Whenever we apply display flex property by default the items will get arranged in row so by default the
+            flex-direction is row then that axis will be called main axis and the other axis is called cross axis. <b>
+                So we can say that the direction in which the item will get layed that axis will be called main axis ,
+                and the axis in which the items are not lying then that axis will be called cross axis. </b> If we
+            change the flex-direction to Column then that axis will be called main axis and the other one will be called
+            cross axis.</p>
+        <p> The properties like justify-content and align-items = center will align the items on the center on the basis
+            of the main-axis.</p>
+        <img src="/Flexbox/Flex-axis.png" alt="Flex-axis">
+
+        <p><b>Flex-wrap:</b> If there are so many items and they are getting hidden then in that we want them to jump to
+            next line in that case we use Flex-wrap property.</p>
+        <p><b>Align-content:</b>If there are multiple lines and we want them to get centered then in that case we use
+            align-content property.</p>
+        <p><b>Gap-property:</b> With the help of this property we can create gap between the elements in row or in
+            column.</p>
+        <p><b>Align-self:</b> if we want to align an individual item then we can use align-self property. In order to
+            make this property work we need to remove the align-content property if applied.</p>
+    </div>
+</body>
+
+</html>

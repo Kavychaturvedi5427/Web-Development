@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans&family=Roboto+Condensed:wght@300&display=swap');
+
+
+.container {
+    border: 2px dotted brown;
+    border-radius: 4px;
+    /* padding: 4px; */
+    display: flex;    /* Using this property will arrange the boxes in left to right order. Now we can use the properties of a flexbox as the display of these items is flex now.*/ 
+    /* All these are the property of container. */
+    justify-content: center;    /*with this property the items of container are now alligned in horizontaly center direction.*/
+    height: 80vh;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-content: center; */
+    row-gap: 20px;    /*This will create row-gap between the elements . */
+    column-gap: 30px;   /*This will create column-gap between the element.*/
+    /* gap : 20px 30px ; shorthand of gap property for row and column. */
+
+}
+
+.item ,.item1 {
+    border: 2px solid red;
+    border-radius: 3px;
+    width: 62px;
+    height: 62px;
+    /* margin: 3px; */
+    background-color: rgb(239, 255, 200);
+}
+
+.content {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.content img{
+    height: auto;
+    width: auto;
+    position: relative;
+    left:250px;
+}
+
+.item1{
+    align-self: flex-end;
+}
