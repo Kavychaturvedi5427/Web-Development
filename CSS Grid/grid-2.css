@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    height: 80vh;
+    border: 4px solid sandybrown;
+    padding: 3px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr ;    /*Now the columns will be made of equal sizing according to the total width available*/ 
+    grid-template-areas: "nav nav nav"      /*first row will be navbar*/
+                         "sidebar article Queries"
+                         "footer footer footer";     /*Second row will have a sidebar an article section and a Query section*/ 
+    row-gap: 3px;
+    column-gap: 4px;
+    justify-items: center;
+    align-items: center;
+}
+.item{
+    border: 3px solid rgb(255, 20, 20);
+    height: 55px;
+   width: 55px;
+}
+
+/* .item-1{
+    grid-area:nav;      /*And as we have given grid-area:nav; to the first element then it will act as a navbar
+    background-color: aliceblue;
+}
+
+.item-2{
+    grid-area: sidebar;
+    background-color: thistle;
+}
+
+.item-3{
+    grid-area: article;
+    background-color: rgb(243, 178, 178);
+}
+
+.item-4{
+    grid-area: Queries;
+    background-color: rgb(183, 122, 245);
+}
+.item-5{
+    grid-area: footer;
+    background-color: palevioletred;
+} */
