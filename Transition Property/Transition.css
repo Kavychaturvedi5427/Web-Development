@@ -1,0 +1,24 @@
+.container{
+    background-color: antiquewhite;
+    width: 50vw;
+    height: 40vh;
+}
+.box{
+    background-color: aquamarine;
+    width: 5vw;
+    height: 4vh;
+    /* In order to make transition of the box smooth we have to use transition property , this transition property is the mixer of 4 other properties */
+    /*1:-*/transition-property: all; /*here we have to give the name of the property in which we have to apply transition if we use all then it will apply transition to all the properties */
+    /*2:-*/transition-duration: 3s;  /*here we have to give the duration for how long we want our transition to play */
+    /*3:-*/transition-timing-function: ease-in-out ;   
+    /*4:-*/transition-delay:1s ;  /*here we define that after how much time we want our transition to play*/
+
+    /* Shothand for this property  */
+    /* transition: TransitionProperty duration timingFunction Delay */
+
+}
+
+.translate{
+    transform: translateX(10vw) translateY(20vh);    /*When we apply this properties we can see that the box will come 10vw in x and 20vh in y but it's not smooth*/
+    background-color: thistle;
+}

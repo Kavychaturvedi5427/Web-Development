@@ -1,0 +1,11 @@
+body{
+    background-color: rebeccapurple;
+    color: white;
+}
+
+@media only screen and (max-width:455px){      /*this media query will only be applicable if we are on screen*/
+    body{
+        background-color: thistle;
+            /*This means apply these properties when the max-wdth of the screen become 455px*/
+    }
+}

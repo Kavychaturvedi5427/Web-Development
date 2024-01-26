@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    height: 50vh;
+    width: 50vw;
+    background-color: springgreen;
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+    background-color: antiquewhite;
+    animation: Firstanimation;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-out;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;    /*With this property we can determine in which direction we want to run our animation*/
+    animation-play-state: paused;  /*It has two values 1st is paused , when applied then it will pause the animation at that point where this property is applied and 2nd is running , when applied will resume our animation from the exact same place where it is paused*/
+
+    /* shorthand for animation: --name-- --duration-- --timing-function-- --delay-- --iteration-count-- --direction-- --fill-mode-- ; */
+
+}
+
+@keyframes Firstanimation{
+    from{
+    }
+    to {
+        transform: translatex(1000px) ;
+    }
+}
