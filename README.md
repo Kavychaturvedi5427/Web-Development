@@ -1,2 +1,2 @@
 # Web
- Web Develepment Course
+ Learnings of Web Development!
